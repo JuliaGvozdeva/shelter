@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    <title>Pets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<html>
+    <body>
+        <div class="fixed-overlay-burger overlay_not-active"></div>
+        <div class="burger burger-panel-menu-close">
+            <div class="burger-container">
+                <a href="https://rolling-scopes-school.github.io/juliagvozdeva-JS2020Q3/shelter/pages/main/index.html">
+                    <div class="logo">
+                        <div class="logo__title">
+                            Cozy House
+                        </div>
+                        <div class="logo__subtitle">
+                            Shelter for pets in Boston
+                        </div>
+                    </div>
+                </a>
+                <div id="burger-menu__close" class="burger-menu">
+                    <ul class="burger-menu__list">
+                        <li class="burger-menu__item"></li>
+                        <li class="burger-menu__item"></li>
+                        <li class="burger-menu__item"></li>
+                    </ul>
+                </div>
+            </div> 
+            <nav class="burger-menu-list">
+                <ul class="burger__list">
+                    <li class="list__item">
+                        <a href="https://rolling-scopes-school.github.io/juliagvozdeva-JS2020Q3/shelter/pages/main/index.html" class="list__link">About the shelter
+                        </a>
+                    </li>
+                    <li class="list__item"><a href="https://rolling-scopes-school.github.io/juliagvozdeva-JS2020Q3/shelter/pages/pets/index.html" class="list__link">Our pets
+                        <div class="item__active-line"></div></a></li>
+                    <li class="list__item">Help the shelter</li>
+                    <li class="list__item">Contacts</li>
+                </ul>
+            </nav> 
+        </div>
+        <header class="header">
+            <div class="wrapper">
+                <div class="header-content">
+                    <a href="https://rolling-scopes-school.github.io/juliagvozdeva-JS2020Q3/shelter/pages/main/index.html">
+                        <div class="logo">
+                            <div class="logo__title">Cozy House</div>
+                            <div class="logo__subtitle">Shelter for pets in Boston</div>
+                        </div>
+                    </a>
+                    <nav id="burger-menu__open" class="burger-menu">
+                        <ul class="burger-menu__list">
+                            <li class="burger-menu__item"></li>
+                            <li class="burger-menu__item"></li>
+                            <li class="burger-menu__item"></li>
+                        </ul>
+                    </nav>
+                    <nav class="menu">
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="https://rolling-scopes-school.github.io/juliagvozdeva-JS2020Q3/shelter/pages/main/index.html" class="list__link">About the shelter</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="https://rolling-scopes-school.github.io/juliagvozdeva-JS2020Q3/shelter/pages/pets/index.html" class="list__link" style="color: #292929;">
+                                    Our pets
+                                    <div class="item__active-line"></div>
+                                </a>
+                            </li>
+                            <li class="list__item">Help the shelter</li>
+                            <li class="list__item">Contacts</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="wrapper">
+                <div class="main-content">
+                    <h3 class="base__title">Our friends who<br>
+                    are looking for a house</h3>
+                    <div id="pets" class="our-friends__slider">
+                        <div id="Katrine" class="slider__item about-pets-modal">
+                            <div class="slider__img"><img src="../../assets/images/pets-katrine.png" alt="pets-katrine"></div>
+                            <div class="slider__title">Katrine</div>
+                            <button class="slider__button">Learn more</button>
+                        </div>
+                        <div id="Jennifer" class="slider__item about-pets-modal">
+                            <div class="slider__img"><img src="../../assets/images/pets-jennifer.png" alt="pets-jennifer"></div>
+                            <div class="slider__title">Jennifer</div>
+                            <button class="slider__button">Learn more</button>
+                        </div>
+                        <div id="Woody" class="slider__item about-pets-modal">
+                            <div class="slider__img"><img src="../../assets/images/pets-woody.png" alt="pets-woody"></div>
+                            <div class="slider__title">Woody</div>
+                            <button class="slider__button">Learn more</button>
+                        </div>
+                        <div id="Sophia" class="slider__item about-pets-modal">
+                            <div class="slider__img"><img src="../../assets/images/pets-sophia.png" alt="pets-sophia"></div>
+                            <div class="slider__title">Sophia</div>
+                            <button class="slider__button">Learn more</button>
+                        </div>
+                        <div id="Timmy" class="slider__item about-pets-modal">
+                            <div class="slider__img"><img src="../../assets/images/pets-timmy.png" alt="pets-katrine"></div>
+                            <div class="slider__title">Timmy</div>
+                            <button class="slider__button">Learn more</button>
+                        </div>
+                        <div id="Charly" class="slider__item about-pets-modal">
+                            <div class="slider__img"><img src="../../assets/images/pets-charly (1).png" alt="pets-jennifer"></div>
+                            <div class="slider__title">Charly</div>
+                            <button class="slider__button">Learn more</button>
+                        </div>
+                        <div id="Scarlett" class="slider__item about-pets-modal">
+                            <div class="slider__img"><img src="../../assets/images/pets-scarlet.png" alt="pets-woody"></div>
+                            <div class="slider__title">Scarlett</div>
+                            <button class="slider__button">Learn more</button>
+                        </div>
+                        <div id="Freddie" class="slider__item about-pets-modal">
+                            <div class="slider__img"><img src="../../assets/images/pets-freddi.png" alt="pets-sophia"></div>
+                            <div class="slider__title">Freddie</div>
+                            <button class="slider__button">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <input type="submit" value="<<" class="pagination__round pagination_not-active" disabled>
+                        <input type="submit" value="<" class="pagination__round pagination_not-active" disabled>
+                        <input type="submit" value="1" class="pagination__round pagination_number">
+                        <input type="submit" value=">" class="pagination__round pagination_active">
+                        <input type="submit" value=">>" class="pagination__round pagination_active">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="wrapper">
+                <div class="footer__content">
+                    <div class="footer__item">
+                        <h3 class="base__title footer__title">For questions and suggestions</h3>
+                        <a href="mailto:email@shelter.com">
+                            <div class="footer__info">
+                                <img src="../../assets/icons/mail.png" class="footer__img">
+                                <h3 class="footer__desc">
+                                    email@shelter.com
+                                </h3>
+                            </div>
+                        </a>
+                        <a href="tel:+136745677554">
+                            <div class="footer__info">
+                                <img src="../../assets/icons/icon-phone.png" class="footer__img">
+                                <h3 class="footer__desc">
+                                    +13 674 567 75 54
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer__item loc">
+                        <h3 class="base__title footer__title">We are waiting for your visit</h3>
+                        <a href="https://yandex.ru/maps/-/CCQ3qEfhwA">
+                            <div class="footer__info footer__info_loc">
+                                <img src="../../assets/icons/icon-marker.png" class="footer__img">
+                                <h3 class="footer__desc">
+                                    1 Central Street, Boston<br>(entrance from the store)
+                                </h3>
+                            </div>
+                        </a>
+                        <a href="https://yandex.ru/maps/-/CCQ3qEfhwA">
+                            <div class="footer__info footer__info_loc">
+                                <img src="../../assets/icons/icon-marker.png" class="footer__img">
+                                <h3 class="footer__desc">
+                                    18 South Park, London
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer__item">
+                        <img src="../../assets/images/footer-puppy.png" alt="dog-image" class="footer__img">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="fixed-overlay fixed-overlay__modal">
+            <div class="modal">
+                <div id="close-modal" class="modal-cross">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.42618 6.00003L11.7046 1.72158C12.0985 1.32775 12.0985 0.689213 11.7046 0.295433C11.3108 -0.0984027 10.6723 -0.0984027 10.2785 0.295433L5.99998 4.57394L1.72148 0.295377C1.32765 -0.098459 0.68917 -0.098459 0.295334 0.295377C-0.0984448 0.689213 -0.0984448 1.32775 0.295334 1.72153L4.57383 5.99997L0.295334 10.2785C-0.0984448 10.6723 -0.0984448 11.3108 0.295334 11.7046C0.68917 12.0985 1.32765 12.0985 1.72148 11.7046L5.99998 7.42612L10.2785 11.7046C10.6723 12.0985 11.3108 12.0985 11.7046 11.7046C12.0985 11.3108 12.0985 10.6723 11.7046 10.2785L7.42618 6.00003Z" fill="#292929"/>
+                    </svg>                        
+                </div>
+                <div id="modal-place" class="modal-window">
+                </div>  
+            </div>
+        </div>
+        <!-- <script src="petsscript.js"></script> -->
+        <script src="../main/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+footer {
+    background-image: url(../../assets/images/start-screen-gradient-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+}
+
+.footer__content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__item {
+    width: 302px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+        width: 281px;
+    }
+
+    &:last-child {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+.footer__title {
+    text-align: left;
+    color: #ffffff;
+}
+
+
+.footer__desc {
+    font-size: 1.3333rem;
+    line-height: 125%;
+    letter-spacing: 0.06em;
+    color: $color-primary;
+}
+
+.footer__info {
+    display: flex;
+    align-items: center;
+    margin-top: 43px;
+
+    &:hover {
+        transition: 0.8s;
+        color: $color-primary-light;
+    }
+}
+
+.footer__info_loc {
+    margin-top: 33px;
+}
+
+.footer__info img{
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
+.footer__item:last-child img{
+    width: 300px;
+}
+
+
+@media screen and (max-width: 1279px) {
+    footer {
+        padding-top: 30px;
+    }
+
+    .footer__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 65px;
+    }
+
+    .footer__item {
+        margin-top: 0px;
+    }
+
+    .footer__item:last-child {
+        margin-bottom: 0px;
+    }
+
+    .footer__item:last-child img{
+        width: 300px;
+    }
+
+    .footer__desc {
+        line-height: 125%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer .wrapper {
+        padding: 0px;
+    }
+    
+    .footer__item:last-child {
+        margin-bottom: 0px;
+        width: 260px;
+    }
+
+    .footer__item a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__item.loc .footer__title  {
+        max-width: 281px;
+        margin-left: 10px;
+    }
+
+    .footer__item.loc a {
+        justify-content: flex-start;
+    }
+
+    .footer__title {
+        text-align: center;
+    }
+
+    .footer__content {
+        row-gap: 40px;
+    }
+
+    .footer__info_loc:first-of-type {
+        margin: 40px 0px 0px;
+    }
+
+    .footer__item:last-child img{
+        width: 260px;
+    }
+
+    .footer__desc {
+        line-height: 115%;
+    }
+}

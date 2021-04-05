@@ -1,0 +1,127 @@
+.addition {
+    background-color: $color-light-l;
+    padding: 80px 0px 96px 0px;
+}
+
+.addition-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.addition-img {
+    margin: 12px 30px 11px 140px;
+}
+
+.addition-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.addition__subtitle {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+}
+
+.card__button {
+    background-color: $color-primary;
+    border-radius: 9px;
+    border: 0;
+    outline: none;
+    width: 349px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3333rem;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+    margin: 20px 0px;
+    font-family: georgia;
+
+    &:hover{
+        background-color: $color-primary-light;
+        cursor: pointer;
+        transition: 0.8s;
+    }
+}
+
+.addition__info {
+    width: 380px;
+    font-family: $arial;
+    font-style: italic;
+    font-size: 0.8rem;
+    line-height: 18px;
+    color: $color-dark-m;
+}
+
+.addition__title {
+    text-align: left;
+}
+
+.card__link {
+    text-decoration: none;
+    color: $color-dark-l;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1279px) {
+    .addition-section {
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .addition-img {
+        margin: 60px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .addition {
+        padding: 43px 0px 40px 0px;
+    }
+
+    .addition-text {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .addition__title {
+        text-align: center;
+    }
+
+    .addition__subtitle {
+        margin-top: 25px;
+        font-size: 1rem;
+        text-align: center;
+        letter-spacing: 0.0em;
+    }
+
+    .addition-img {
+        margin: 42px 0px 0px 0px;
+        max-width: 260px;
+        height: auto;
+    }
+
+    .card__link {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .addition__info {
+        max-width: 280px;
+        text-align: justify;
+    }
+
+    .card__button {
+        margin: 24px 0px 20px 0px;
+        width: 281px;
+        height: 43px;
+        font-size: 1rem;
+    }
+}

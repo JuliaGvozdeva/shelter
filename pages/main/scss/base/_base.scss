@@ -1,0 +1,94 @@
+$color-primary: #F1CDB3;
+$color-primary-light: #FDDCC4;
+$color-dark-l: #545454;
+$color-dark-xl: #4C4C4C;
+$color-light-s: #FAFAFA;
+$color-light-l: #F6F6F6;
+$color-dark-m: #B2B2B2;
+$color-light-xl: #FFFFFF;
+$color-dark-3xl: #292929;
+$color-dark-s: #CDCDCD;
+
+
+// font
+@font-face {
+    font-family: georgia;
+    src: url(../../assets/fonts/Georgia/seriffic.ttf);
+}
+
+$georgia: georgia;
+$arial: Arial, sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Georgia, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden-scroll {
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0px 40px;
+}
+
+.base__button {
+    padding: 15px 45px;
+    background-color: #F1CDB3;
+    border: none;
+    border-radius: 100px;
+    font-size: 1.1333rem;
+    color: #292929;
+    outline: none;
+    font-family: georgia;
+    box-sizing: border-box;
+    letter-spacing: 0.06em;
+    line-height: 130%;
+
+    &:hover{
+        background-color: $color-primary-light;
+        cursor: pointer;
+        border: 0;
+        transition: 0.8s;
+    }
+}
+
+.base__title {
+    font-size: 2.3333rem;
+    line-height: 1.3;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $color-dark-l;
+}
+
+@media screen and (max-width: 1020px) {
+    .wrapper {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper {
+        padding: 0 10px;
+    }
+    
+    .base__title {
+        font-size: 1.667rem;
+    }
+}
